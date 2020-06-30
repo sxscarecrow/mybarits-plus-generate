@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.shenxu.test.repostory.DetailRoyaltyRepostory">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.shenxu.test.entity.DetailRoyalty">
+        <id column="id" property="id" />
+        <result column="artist" property="artist" />
+        <result column="album" property="album" />
+        <result column="song" property="song" />
+        <result column="prepayment_uid" property="prepaymentUid" />
+        <result column="platform" property="platform" />
+        <result column="total" property="total" />
+        <result column="once" property="once" />
+        <result column="royalty_log_id" property="royaltyLogId" />
+        <result column="type" property="type" />
+        <result column="created_time" property="createdTime" />
+        <result column="updated_time" property="updatedTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, artist, album, song, prepayment_uid, platform, total, once, royalty_log_id, type, created_time, updated_time
+    </sql>
+
+</mapper>

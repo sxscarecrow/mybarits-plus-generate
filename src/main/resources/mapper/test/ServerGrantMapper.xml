@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.shenxu.test.repostory.ServerGrantRepostory">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.shenxu.test.entity.ServerGrant">
+        <id column="id" property="id" />
+        <result column="company_id" property="companyId" />
+        <result column="company_app_id" property="companyAppId" />
+        <result column="product_id" property="productId" />
+        <result column="action" property="action" />
+        <result column="scope" property="scope" />
+        <result column="create_time" property="createTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, company_id, company_app_id, product_id, action, scope, create_time
+    </sql>
+
+</mapper>

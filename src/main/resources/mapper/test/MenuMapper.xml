@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.shenxu.test.repostory.MenuRepostory">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.shenxu.test.entity.Menu">
+        <id column="id" property="id" />
+        <result column="parent_id" property="parentId" />
+        <result column="product_id" property="productId" />
+        <result column="company_id" property="companyId" />
+        <result column="name" property="name" />
+        <result column="component_name" property="componentName" />
+        <result column="icon" property="icon" />
+        <result column="link" property="link" />
+        <result column="type" property="type" />
+        <result column="permis" property="permis" />
+        <result column="sort" property="sort" />
+        <result column="descri" property="descri" />
+        <result column="create_time" property="createTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, parent_id, product_id, company_id, name, component_name, icon, link, type, permis, sort, descri, create_time
+    </sql>
+
+</mapper>

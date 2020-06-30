@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.shenxu.royaltyV1.repostory.BatchLnkCopyrightRepostory">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.shenxu.royaltyV1.domain.BatchLnkCopyright">
+        <id column="id" property="id" />
+        <result column="batch_id" property="batchId" />
+        <result column="op_uid" property="opUid" />
+        <result column="is_confirm" property="isConfirm" />
+        <result column="remark" property="remark" />
+        <result column="created_time" property="createdTime" />
+        <result column="updated_time" property="updatedTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, batch_id, op_uid, is_confirm, remark, created_time, updated_time
+    </sql>
+
+</mapper>

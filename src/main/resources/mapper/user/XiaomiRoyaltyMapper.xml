@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.shenxu.user.repostory.XiaomiRoyaltyRepostory">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.shenxu.user.entity.XiaomiRoyalty">
+        <id column="id" property="id" />
+        <result column="uid" property="uid" />
+        <result column="op_uid" property="opUid" />
+        <result column="artist" property="artist" />
+        <result column="album" property="album" />
+        <result column="song" property="song" />
+        <result column="play_num" property="playNum" />
+        <result column="vip8_play_num" property="vip8PlayNum" />
+        <result column="vip12_play_num" property="vip12PlayNum" />
+        <result column="ad_income_hifive_get" property="adIncomeHifiveGet" />
+        <result column="vip_income_hifive_get" property="vipIncomeHifiveGet" />
+        <result column="download_income_hifive_get" property="downloadIncomeHifiveGet" />
+        <result column="income_hifive_get" property="incomeHifiveGet" />
+        <result column="hifive_made_cost" property="hifiveMadeCost" />
+        <result column="hifive_made_cost_once" property="hifiveMadeCostOnce" />
+        <result column="hifive_made_cost_left" property="hifiveMadeCostLeft" />
+        <result column="prepayment_cost_once" property="prepaymentCostOnce" />
+        <result column="hifive_cost" property="hifiveCost" />
+        <result column="hifive_income" property="hifiveIncome" />
+        <result column="artist_income" property="artistIncome" />
+        <result column="mastery_ratio" property="masteryRatio" />
+        <result column="publishing_ratio" property="publishingRatio" />
+        <result column="mastery_income" property="masteryIncome" />
+        <result column="publishing_income" property="publishingIncome" />
+        <result column="month" property="month" />
+        <result column="royalty_log_id" property="royaltyLogId" />
+        <result column="created_time" property="createdTime" />
+        <result column="updated_time" property="updatedTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, uid, op_uid, artist, album, song, play_num, vip8_play_num, vip12_play_num, ad_income_hifive_get, vip_income_hifive_get, download_income_hifive_get, income_hifive_get, hifive_made_cost, hifive_made_cost_once, hifive_made_cost_left, prepayment_cost_once, hifive_cost, hifive_income, artist_income, mastery_ratio, publishing_ratio, mastery_income, publishing_income, month, royalty_log_id, created_time, updated_time
+    </sql>
+
+</mapper>

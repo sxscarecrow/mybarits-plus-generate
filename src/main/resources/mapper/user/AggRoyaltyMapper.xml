@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.shenxu.user.repostory.AggRoyaltyRepostory">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.shenxu.user.entity.AggRoyalty">
+        <id column="id" property="id" />
+        <result column="op_uid" property="opUid" />
+        <result column="artist" property="artist" />
+        <result column="platform" property="platform" />
+        <result column="month" property="month" />
+        <result column="income_hifive_get" property="incomeHifiveGet" />
+        <result column="prepayment_cost_once" property="prepaymentCostOnce" />
+        <result column="hifive_cost" property="hifiveCost" />
+        <result column="hifive_income" property="hifiveIncome" />
+        <result column="artist_income" property="artistIncome" />
+        <result column="mastery_income" property="masteryIncome" />
+        <result column="publishing_income" property="publishingIncome" />
+        <result column="rate" property="rate" />
+        <result column="royalty_log_id" property="royaltyLogId" />
+        <result column="status" property="status" />
+        <result column="created_time" property="createdTime" />
+        <result column="updated_time" property="updatedTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, op_uid, artist, platform, month, income_hifive_get, prepayment_cost_once, hifive_cost, hifive_income, artist_income, mastery_income, publishing_income, rate, royalty_log_id, status, created_time, updated_time
+    </sql>
+
+</mapper>

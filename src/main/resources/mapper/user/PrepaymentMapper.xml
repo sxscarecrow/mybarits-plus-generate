@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.shenxu.user.repostory.PrepaymentRepostory">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.shenxu.user.entity.Prepayment">
+        <id column="id" property="id" />
+        <result column="uid" property="uid" />
+        <result column="company" property="company" />
+        <result column="money" property="money" />
+        <result column="contract_date" property="contractDate" />
+        <result column="years" property="years" />
+        <result column="platforms" property="platforms" />
+        <result column="be_buyout" property="beBuyout" />
+        <result column="royalty_log_id" property="royaltyLogId" />
+        <result column="created_time" property="createdTime" />
+        <result column="updated_time" property="updatedTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, uid, company, money, contract_date, years, platforms, be_buyout, royalty_log_id, created_time, updated_time
+    </sql>
+
+</mapper>
