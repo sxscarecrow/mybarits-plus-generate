@@ -20,6 +20,7 @@ public class GenerateApplication {
     /**
      * <p>
      * 读取控制台内容
+     * 就是单纯的测试一下
      * </p>
      */
     public static String scanner(String tip) {
