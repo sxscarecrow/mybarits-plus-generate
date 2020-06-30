@@ -17,4 +17,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/broadcasts/background")
 public class BackgroundController {
 
+    /**
+     * 没有别的意思就是单纯的测试一下能不能提交上去
+     */
+
 }
